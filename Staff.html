@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head> 
+    <title>Fc Barcelone</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo_barca.png" type="image/png" sizes="16x16">
+  </head>
+  <body id="bodyj">
+    <div class="conteneur">
+      <h1 id="titrej">Staff Technique</h1>
+      <img src="Images/Images_page_d'acceuil/Ballon.gif" alt="Erreur image!" class="icone-image" onclick="ouvrirmenu()">
+      <div class="boite-menu" id="menu">
+        <div class="liens-droite">
+          <img src="Images/Images_diverses/Close(g).png" alt="Erreur image!" onclick="fermermenu()">
+        </div>
+        <div class="liens-menu">
+          <a href="Page_d'accueil.html">Accueil</a>
+          <a href="Joueurs.html">Joueurs</a>
+          <a href="Quiz.html">Quiz</a>
+        </div>
+      </div>
+      
+      <section class="attaquants">
+        <h2>Staff</h2>
+        <div class="attaquant-grid">
+          <div class="player-card">
+            <img src="Images/Staff/Flick/image_de_profil.png" alt="Flick">
+            <h3><a class="noms" href="https://www.transfermarkt.fr/hansi-flick/profil/trainer/67" target="_blank">Hans-Dieter Flick</a></h3>
+            <p><strong>Poste: </strong>Entraîneur principal</p>
+            <p><strong>Nationalité:</strong> Allemagne</p>
+          </div>
+
+          <div class="player-card">
+            <img src="Images/Staff/Marcus_sorg/image_de_profil.png" alt="Sorg">
+            <h3><a class="noms" href="https://www.transfermarkt.fr/marcus-sorg/profil/trainer/334" target="_blank">Marcus Sorg</a></h3>
+            <p><strong>Poste: </strong>Entraîneur assistant</p>
+            <p><strong>Nationalité:</strong> Allemagne</p>
+          </div>
+
+          <div class="player-card">
+            <img src="Images/Staff/Toni_Tapalovic/image_de_profil.png" alt="Toni">
+            <h3><a class="noms" href="https://www.transfermarkt.fr/toni-tapalovic/profil/trainer/19542" target="_blank">Toni Tapalovic</a></h3>
+            <p><strong>Poste: </strong>Entraîneur assistant</p>
+            <p><strong>Nationalité:</strong> Croatie-Allemagne</p>
+          </div>
+          
+          <div class="player-card">
+            <img src="Images/Staff/Heiko_Westermann/image_de_profil.png" alt="Heiko">
+            <h3><a class="noms" href="https://www.transfermarkt.fr/heiko-westermann/profil/trainer/67091" target="_blank">Heiko Westermann</a></h3>
+            <p><strong>Poste: </strong>Entraîneur assistant</p>
+            <p><strong>Nationalité:</strong> Allemagne</p>
+          </div>
+          
+          <div class="player-card">
+            <img src="Images/Staff/Arnau_Blanco/image_de_profil.png" alt="Blanco">
+            <h3><a class="noms" href="https://www.transfermarkt.fr/arnau-blanco/profil/trainer/106371" target="_blank">Arnau Blanco</a></h3>
+            <p><strong>Poste: </strong>Entraîneur assistant</p>
+            <p><strong>Nationalité:</strong> Espagne</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p id="copyright">&copy; 2024 FC Barcelona. Tous droits réservés.</p>
+      </footer>
+    </div>
+    <script>
+      var menu = document.getElementById("menu");
+
+      function fermermenu(){
+        menu.style.top = '-100vh';
+      }
+      function ouvrirmenu(){
+        menu.style.top = '17%';
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head> 
+    <title>Fc Barcelone</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo_barca.png" type="image/png" sizes="16x16">
+  </head>
+  <body id="bodyq">
+    <div class="conteneur">
+      <h1 id="titrej">Quiz</h1>
+      <img src="Images/Images_page_d'acceuil/Ballon.gif" alt="Erreur image!" class="icone-image" onclick="ouvrirmenu()">
+      <div class="boite-menu" id="menu">
+        <div class="liens-droite">
+          <img src="Images/Images_diverses/Close(g).png" alt="Erreur image!" onclick="fermermenu()">
+        </div>
+        <div class="liens-menu">
+          <a href="Page_d'accueil.html">Accueil</a>
+          <a href="Joueurs.html">Joueurs</a>
+          <a href="Staff.html">Staff</a>
+        </div>
+      </div>
+      <div class="quiz-container">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>1. Qui est le meilleur attaquant actuel du Fc Barcelone ?</legend>
+            <ul class="options">
+              <li><label><input type="radio" name="q1" value="Lamine"> Lamine Yamal</label></li>
+              <li><label><input type="radio" name="q1" value="Cubarsi"> Pau Cubarsi</label></li>
+              <li><label><input type="radio" name="q1" value="Raphinha"> Raphael Dias Belloli (Raphinha)</label></li>
+              <li><label><input type="radio" name="q1" value="Lewandowski"> Robert Lewandowski</label></li>
+            </ul>
+          </fieldset>
+    
+          <fieldset>
+            <legend>2. Combien de personnes le staff technique du Fc Barcelone contient-il ?</legend>
+            <ul class="options">
+              <li><label><input type="radio" name="q2" value="1"> 1</label></li>
+              <li><label><input type="radio" name="q2" value="5"> 5</label></li>
+              <li><label><input type="radio" name="q2" value="7"> 7</label></li>
+              <li><label><input type="radio" name="q2" value="9"> 9</label></li>
+            </ul>
+          </fieldset>
+    
+          <fieldset>
+            <legend>3. Parmi ces joueurs lesquels ont moins de 18 ans ? </legend>
+            <ul class="options">
+              <li><label><input type="checkbox" name="q3" value="Lamine Yamal"> Lamine Yamal</label></li>
+              <li><label><input type="checkbox" name="q3" value="Pau Cubarsi"> Pau Cubarsi</label></li>
+              <li><label><input type="checkbox" name="q3" value="Robert Lewandowski"> Robert Lewandowski</label></li>
+              <li><label><input type="checkbox" name="q3" value="Inaki Pena"> Inaki Pena</label></li>
+            </ul>
+          </fieldset>
+    
+          <fieldset>
+            <legend>4. Qui est le président actuel du Fc Barcelone ?</legend>
+            <ul class="options">
+              <li><label><input type="radio" name="q4" value="Florentino Pérez"> Florentino Pérez</label></li>
+              <li><label><input type="radio" name="q4" value="Bartomeu"> Bartomeu</label></li>
+              <li><label><input type="radio" name="q4" value="Tom Werner"> Tom Werner</label></li>
+              <li><label><input type="radio" name="q4" value="Joan Laporta"> Joan Laporta</label></li>
+            </ul>
+          </fieldset>
+    
+          <fieldset>
+            <legend>5. Combien de titres Laliga le FC Barcelone a-t-il remporté ?</legend>
+            <ul class="options">
+              <li><label><input type="radio" name="q5" value="14"> 14</label></li>
+              <li><label><input type="radio" name="q5" value="0"> 0</label></li>
+              <li><label><input type="radio" name="q5" value="20"> 20</label></li>
+              <li><label><input type="radio" name="q5" value="26"> 26</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>6. Qui est votre joueur préferé du Fc Barcelone ?</legend>
+            <ul class="options">
+              <li><label><input type="text" name="q6"></label></li>
+            </ul>
+          </fieldset>
+    
+          <button type="submit" class="submit-btn">Soumettre</button>
+        </form>
+      </div>
+      
+
+      <footer>
+        <p id="copyright">&copy; 2024 FC Barcelona. Tous droits réservés.</p>
+      </footer>
+    </div>
+    <script>
+      var menu = document.getElementById("menu");
+
+      function fermermenu(){
+        menu.style.top = '-100vh';
+      }
+      function ouvrirmenu(){
+        menu.style.top = '17%';
+      }
+    </script>
+  </body>
+</html>
